@@ -1,6 +1,93 @@
 # SimulationBMS
 This is the BUPT computer science data structure curriculum design, using C++ language to build a library management system
                                 
+ ### Library management system manual
+
+
+The system is for administrators, students, teachers, three major users. Students and teachers have different access to books, administrators
+In addition to the functions of students and teachers, books and information and user information in the library should be maintained and modified to make sure
+Ensure the normal use of the system.
+
+
+Click librarry.exe to jump out of the library login screen, click the login button and fill in your username and password,
+The system will automatically determine whether the current login is a regular user (student or teacher) or administrator and jump out of the different bounds
+Noodles.
+
+1. common user interface
+The average user has the ability to borrow books, return books, make appointments, check personal information, and modify personal information.
+
+
+    (1) borrow books
+Click the interface library button, enter the number of books you want to borrow, and the number of days you want to borrow ID. Click OK if you enter
+The correct ID and the book have not yet been lent. Enter a valid library time and you can borrow it successfully. Otherwise prompt
+Checking information.
+
+
+    (2) return the book
+Click the interface, return the book button, enter the ID you want to return the book, and if the book lending information in conformity with the tips
+Return the book successfully, otherwise prompt to check enter ID.
+
+    
+(3) reservation
+Click the interface appointment button to enter the ID of the book you want to book, if the book is not in the library and the borrower does not
+The current user (the user cannot book and borrow the same book at the same time) prompts the appointment to succeed, otherwise it will not be able to make an appointment
+The current status of the book you will book when you log in next time.
+
+
+    (4) check personal information
+Click on the personal information button to view your information, including the name, ID, Institute, integrity status,
+Status, account balance, account creation time, number of books and their ID, amount of appointment and their ID.
+
+    
+(5) modify personal information
+Click on the modified information, you can modify personal information, you can modify the name, college, ID, password. Other
+Some attributes can not be modified at will.
+
+
+2. administrator interface
+Administrators have access to books, books, books, books, books, changes in accounts, accounts
+Information, account recharge, this month's information statistics, the function of creating new accounts.
+
+
+    (1) borrow books
+Click on the library button to borrow books. Unlike regular users, administrators need to enter user ID to borrow books,
+That is, administrators can borrow books from other users.
+
+    
+(2) return the book
+And ordinary users also books, enter the book ID to return, the system automatically detects who borrowed.
+
+    
+(3) modify book information
+Click Modify the book button, enter the book to modify the ID, modify the book.
+
+    
+(4) purchase of books
+Click on the Add button to fill in the type, title, author, number, publisher, price, and permissions for the book
+And other information, buy books.
+
+    
+(5) delete books
+Click the delete Book button, enter the book ID, delete the book
+
+
+    (6) modifying user information
+Enter the user ID to modify the user information.
+
+
+    (7) display account information
+Click the display account information button to display information for all users. You can search user information by entering ID.
+
+
+    (8) recharge account
+Enter the user ID and recharge the amount to recharge.
+
+
+    (9) statistics this month
+Click the statistics button this month to display all the information for that month.
+
+    
+(10) creating accounts
 
 
    本系统面向管理员，学生，教师三大用户。学生和教师有不同的图书借阅权限，管理员除了具有学生和教师的功能外，还要对馆内的图书信息和用户信息等进行维护和修改，以确保该系统的正常使用。
@@ -94,90 +181,4 @@ This is the BUPT computer science data structure curriculum design, using C++ la
               单击本月统计按钮，显示当月的所有信息。
 
           （10）.创建账户
-   ### Library management system manual
-
-
-The system is for administrators, students, teachers, three major users. Students and teachers have different access to books, administrators
-In addition to the functions of students and teachers, books and information and user information in the library should be maintained and modified to make sure
-Ensure the normal use of the system.
-
-
-Click librarry.exe to jump out of the library login screen, click the login button and fill in your username and password,
-The system will automatically determine whether the current login is a regular user (student or teacher) or administrator and jump out of the different bounds
-Noodles.
-
-1. common user interface
-The average user has the ability to borrow books, return books, make appointments, check personal information, and modify personal information.
-
-
-    (1) borrow books
-Click the interface library button, enter the number of books you want to borrow, and the number of days you want to borrow ID. Click OK if you enter
-The correct ID and the book have not yet been lent. Enter a valid library time and you can borrow it successfully. Otherwise prompt
-Checking information.
-
-
-    (2) return the book
-Click the interface, return the book button, enter the ID you want to return the book, and if the book lending information in conformity with the tips
-Return the book successfully, otherwise prompt to check enter ID.
-
-    
-(3) reservation
-Click the interface appointment button to enter the ID of the book you want to book, if the book is not in the library and the borrower does not
-The current user (the user cannot book and borrow the same book at the same time) prompts the appointment to succeed, otherwise it will not be able to make an appointment
-The current status of the book you will book when you log in next time.
-
-
-    (4) check personal information
-Click on the personal information button to view your information, including the name, ID, Institute, integrity status,
-Status, account balance, account creation time, number of books and their ID, amount of appointment and their ID.
-
-    
-(5) modify personal information
-Click on the modified information, you can modify personal information, you can modify the name, college, ID, password. Other
-Some attributes can not be modified at will.
-
-
-2. administrator interface
-Administrators have access to books, books, books, books, books, changes in accounts, accounts
-Information, account recharge, this month's information statistics, the function of creating new accounts.
-
-
-    (1) borrow books
-Click on the library button to borrow books. Unlike regular users, administrators need to enter user ID to borrow books,
-That is, administrators can borrow books from other users.
-
-    
-(2) return the book
-And ordinary users also books, enter the book ID to return, the system automatically detects who borrowed.
-
-    
-(3) modify book information
-Click Modify the book button, enter the book to modify the ID, modify the book.
-
-    
-(4) purchase of books
-Click on the Add button to fill in the type, title, author, number, publisher, price, and permissions for the book
-And other information, buy books.
-
-    
-(5) delete books
-Click the delete Book button, enter the book ID, delete the book
-
-
-    (6) modifying user information
-Enter the user ID to modify the user information.
-
-
-    (7) display account information
-Click the display account information button to display information for all users. You can search user information by entering ID.
-
-
-    (8) recharge account
-Enter the user ID and recharge the amount to recharge.
-
-
-    (9) statistics this month
-Click the statistics button this month to display all the information for that month.
-
-    
-(10) creating accounts
+  
