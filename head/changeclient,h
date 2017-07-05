@@ -1,0 +1,25 @@
+#ifndef CHANGECLIENT_H
+#define CHANGECLIENT_H
+
+#include <QDialog>
+
+namespace Ui {
+class changeclient;
+}
+
+class changeclient : public QDialog
+{
+    Q_OBJECT
+
+public:
+    explicit changeclient(QWidget *parent = 0);
+    ~changeclient();
+
+private slots:
+    void on_pushButton_clicked();
+
+private:
+    Ui::changeclient *ui;
+};
+
+#endif // CHANGECLIENT_H
